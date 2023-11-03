@@ -1,4 +1,4 @@
-# MyTicketQR - Proyecto de Kotlin con Spring Boot y MongoDB
+# MyTicketQR - Kotlin con Spring Boot y MongoDB
 
 Este proyecto de Kotlin con Spring Boot y MongoDB, llamado "MyTicketQR", es una aplicación que te permite gestionar la creación de tickets, usuarios y realizar autenticación. La aplicación se centra en la creación de tickets y permite a los usuarios autenticados administrar sus boletos de eventos.
 
