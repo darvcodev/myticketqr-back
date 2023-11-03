@@ -1,16 +1,13 @@
 package com.darv.myticketqr
 
-import org.springframework.web.bind.annotation.RequestMapping
-import org.springframework.web.bind.annotation.RestController
-import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.http.ResponseEntity
-import org.springframework.web.bind.annotation.PostMapping
-import org.springframework.web.bind.annotation.RequestBody
 import org.springframework.http.HttpStatus
+import org.springframework.web.bind.annotation.*
 import java.time.LocalDateTime
 
 @RestController
 @RequestMapping("/tickets")
+@CrossOrigin(origins = ["*"], methods = [RequestMethod.GET, RequestMethod.POST])
 class TicketController(
     private val ticketsRepository: TicketRepository
 ) {
@@ -18,6 +15,12 @@ class TicketController(
     @GetMapping
     fun getAllTickets(): ResponseEntity<List<Ticket>> {
         val tickets = ticketsRepository.findAll()
+        return ResponseEntity.ok(tickets)
+    }
+
+    @GetMapping("/{id}")
+    fun getTicketsByUserId(@PathVariable("id") userId: String): ResponseEntity<List<Ticket>> {
+        val tickets = ticketsRepository.findAllByUserId(userId)
         return ResponseEntity.ok(tickets)
     }
 
