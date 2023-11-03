@@ -23,9 +23,9 @@ Antes de ejecutar la aplicación, asegúrate de tener instalados los siguientes 
 
 1. Clona el repositorio de GitHub:
 
-   ```
-   git clone https://github.com/tuusuario/MyTicketQR.git
-   ```
+```
+git clone https://github.com/darvcodev/MyTicketQR.git
+```
 
 2. Configura la base de datos MongoDB editando el archivo `application.properties` en la carpeta `src/main/resources`. Asegúrate de proporcionar la URL de conexión de tu base de datos MongoDB.
 
@@ -54,7 +54,3 @@ Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto con noso
 ## Licencia
 
 Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más información.
-
----
-
-¡Gracias por utilizar MyTicketQR! Esperamos que esta aplicación te sea útil. Siéntete libre de personalizar este README según las necesidades de tu proyecto y proporcionar información adicional sobre su funcionamiento.
