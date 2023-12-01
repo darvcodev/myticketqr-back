@@ -11,3 +11,13 @@ data class TicketRequest (
     val precio: Number,
     val validada: Boolean,
 )
+
+data class TicketUpdateRequest(
+    val celular: String,
+    val comprador: String,
+    val estado: String,
+)
+
+data class TicketValidateRequest(
+    val validada: Boolean,
+)
